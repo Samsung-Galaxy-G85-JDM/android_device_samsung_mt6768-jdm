@@ -73,6 +73,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlay_JDM_G85 \
+    SystemUIOverlay_JDM_G85 \
     WiFiOverlay_JDM_G85 
     
 DEVICE_PACKAGE_OVERLAYS += \
