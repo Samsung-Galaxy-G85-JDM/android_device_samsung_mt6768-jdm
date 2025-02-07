@@ -51,3 +51,12 @@ debug.sf.late.sf.duration=27600000
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.use_phase_offsets_as_durations=1
 persist.sys.brightness.low.gamma=true
+
+# Example Defintions
+ro.infinity.soc=MediaTek G85
+ro.infinity.battery=5000 mAh
+ro.infinity.display=720 x 1600, 60 Hz
+ro.infinity.camera=50MP + 8MP + 2MP
+
+# Example Defintion
+ro.product.marketname=Galaxy JDM G85
