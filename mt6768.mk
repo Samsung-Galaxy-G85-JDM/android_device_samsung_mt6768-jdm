@@ -120,10 +120,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768 
 
-# SEC_RIL
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(COMMON_PATH)/vendor_overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/31/)
-
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
@@ -148,4 +144,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
 # Inherit the sign keys
 $(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+
+# SEC_RIL
+$(call inherit-product, vendor/samsung/secril/sec_ril.mk)
 
